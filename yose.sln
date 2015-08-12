@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "yose", "yose\yose.vbproj", "{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{ED8B4F3B-C777-4ED5-B877-77AB642C8C5E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{DE0D1080-5F29-4D91-98A7-8E9F1F39C176}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\yose-WAWS-dev.json = PublishScripts\Configurations\yose-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yoseMVC", "yoseMVC\yoseMVC.csproj", "{18E86A89-72EF-400B-A4FC-19D1E1242659}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E86A89-72EF-400B-A4FC-19D1E1242659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E86A89-72EF-400B-A4FC-19D1E1242659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E86A89-72EF-400B-A4FC-19D1E1242659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E86A89-72EF-400B-A4FC-19D1E1242659}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE0D1080-5F29-4D91-98A7-8E9F1F39C176} = {ED8B4F3B-C777-4ED5-B877-77AB642C8C5E}
+	EndGlobalSection
+EndGlobal
