@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,13 +11,23 @@ namespace yoseMVC.Controllers
     public class primeFactorsController : ApiController
     {
         // GET api/primefactors
-        public Prime Get([FromUri]string number)
+        public object Get([FromUri]string number)
         {
 
-            int userNumber = int.Parse(number);
+            int userNumber = 0;
+ 
 
-            Prime newPrime = new Prime();
-            newPrime.number = userNumber;
+            if(!int.TryParse(number, out userNumber))
+            {
+                PrimeWithError pwr = new PrimeWithError();
+                pwr.error = "not a number";
+                pwr.number = number;
+                //var serializeObject = JsonConvert.SerializeObject(pwr);
+                return pwr;
+            }
+
+            PrimeWithResult newPrime = new PrimeWithResult();
+            newPrime.number = number;
             newPrime.decomposition = new List<int>();
 
             while (userNumber >= 2)
@@ -25,6 +36,7 @@ namespace yoseMVC.Controllers
                 userNumber = userNumber / 2;
             }
 
+            //var serializeObjectNum = JsonConvert.SerializeObject(newPrime);
             return newPrime;
         }
 
@@ -36,19 +48,17 @@ namespace yoseMVC.Controllers
 
         // POST api/primefactors
         public void Post([FromBody]string value)
-        {
+        {       
+           // int number = int.Parse(value);
 
-            
-            int number = int.Parse(value);
+           // Prime newPrime = new Prime();
+           //// newPrime.number = number;
+           // newPrime.decomposition = new List<int>();
 
-            Prime newPrime = new Prime();
-            newPrime.number = number;
-            newPrime.decomposition = new List<int>();
-
-            while(number >= 0  )
-            {
-                newPrime.decomposition.Add(2);
-            }
+           // while(number >= 0  )
+           // {
+           //     newPrime.decomposition.Add(2);
+           // }
         }
 
         // PUT api/primefactors/5
@@ -64,7 +74,20 @@ namespace yoseMVC.Controllers
 
     public class Prime
     {
-        public int number;
+
+
+
+    }
+
+    public class PrimeWithError : Prime
+    {
+        public string number;
+        public string error;
+    }
+
+    public class PrimeWithResult : Prime
+    {
+        public string number;
         public List<int> decomposition;
     }
 }

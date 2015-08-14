@@ -2,6 +2,19 @@
     ViewBag.Title = "Index";
 }
 
+<script type="text/javascript">
+    function Click(id)
+    {
+        alert(id);
+        document.getElementById(id).className = "lost";
+    }
+
+    function load()
+    {
+
+
+    }
+</script>
 <h2 id="title">Minesweeper</h2>
 
 <style type="text/css">
@@ -33,85 +46,85 @@
 </style>
 <table class="tg" id="cell-nxp">
     <tr id="Row1">
-        <th class="tg-031e" id="cell-1x1"></th>
-        <th class="tg-031e" id="cell-1x2"></th>
-        <th class="tg-031e" id="cell-1x3"></th>
-        <th class="tg-031e" id="cell-1x4"></th>
-        <th class="tg-031e" id="cell-1x5"></th>
-        <th class="tg-031e" id="cell-1x6"></th>
-        <th class="tg-031e" id="cell-1x7"></th>
-        <th class="tg-031e" id="cell-1x8"></th>
+        <th class="cell-1x1" id="cell-1x1" onclick="Click(this.id)"></th>
+        <th class="cell-1x2" id="cell-1x2" onclick="Click(this.id)"></th>
+        <th class="cell-1x3" id="cell-1x3" onclick="Click(this.id)"></th>
+        <th class="cell-1x4" id="cell-1x4" onclick="Click(this.id)"></th>
+        <th class="cell-1x5" id="cell-1x5" onclick="Click(this.id)"></th>
+        <th class="cell-1x6" id="cell-1x6" onclick="Click(this.id)"></th>
+        <th class="cell-1x7" id="cell-1x7" onclick="Click(this.id)"></th>
+        <th class="cell-1x8" id="cell-1x8" onclick="Click(this.id)"></th>
     </tr>
     <tr id="Row2">
-        <th class="tg-031e" id="cell-2x1"></th>
-        <th class="tg-031e" id="cell-2x2"></th>
-        <th class="tg-031e" id="cell-2x3"></th>
-        <th class="tg-031e" id="cell-2x4"></th>
-        <th class="tg-031e" id="cell-2x5"></th>
-        <th class="tg-031e" id="cell-2x6"></th>
-        <th class="tg-031e" id="cell-2x7"></th>
-        <th class="tg-031e" id="cell-2x8"></th>
+        <th class="cell-2x1" id="cell-2x1" onclick="Click(this.id)"></th>
+        <th class="cell-2x2" id="cell-2x2" onclick="Click(this.id)"></th>
+        <th class="cell-2x3" id="cell-2x3" onclick="Click(this.id)"></th>
+        <th class="cell-2x4" id="cell-2x4" onclick="Click(this.id)"></th>
+        <th class="cell-2x5" id="cell-2x5" onclick="Click(this.id)"></th>
+        <th class="cell-2x6" id="cell-2x6" onclick="Click(this.id)"></th>
+        <th class="cell-2x7" id="cell-2x7" onclick="Click(this.id)"></th>
+        <th class="cell-2x8" id="cell-2x8" onclick="Click(this.id)"></th>
     </tr>
     <tr id="Row3">
-        <th class="tg-031e" id="cell-3x1"></th>
-        <th class="tg-031e" id="cell-3x2"></th>
-        <th class="tg-031e" id="cell-3x3"></th>
-        <th class="tg-031e" id="cell-3x4"></th>
-        <th class="tg-031e" id="cell-3x5"></th>
-        <th class="tg-031e" id="cell-3x6"></th>
-        <th class="tg-031e" id="cell-3x7"></th>
-        <th class="tg-031e" id="cell-3x8"></th>
+        <th class="cell-3x1" id="cell-3x1" onclick="Click(this.id)"></th>
+        <th class="cell-3x2" id="cell-3x2" onclick="Click(this.id)"></th>
+        <th class="cell-3x3" id="cell-3x3" onclick="Click(this.id)"></th>
+        <th class="cell-3x4" id="cell-3x4" onclick="Click(this.id)"></th>
+        <th class="cell-3x5" id="cell-3x5" onclick="Click(this.id)"></th>
+        <th class="cell-3x6" id="cell-3x6" onclick="Click(this.id)"></th>
+        <th class="cell-3x7" id="cell-3x7" onclick="Click(this.id)"></th>
+        <th class="cell-3x8" id="cell-3x8" onclick="Click(this.id)"></th>
     </tr>
     <tr
     <tr id="Row4">
-        <th class="tg-031e" id="cell-4x1"></th>
-        <th class="tg-031e" id="cell-4x2"></th>
-        <th class="tg-031e" id="cell-4x3"></th>
-        <th class="tg-031e" id="cell-4x4"></th>
-        <th class="tg-031e" id="cell-4x5"></th>
-        <th class="tg-031e" id="cell-4x6"></th>
-        <th class="tg-031e" id="cell-4x7"></th>
-        <th class="tg-031e" id="cell-4x8"></th>
+        <th class="cell-4x1" id="cell-4x1" onclick="Click(this.id)"></th>
+        <th class="cell-4x2" id="cell-4x2" onclick="Click(this.id)"></th>
+        <th class="cell-4x3" id="cell-4x3" onclick="Click(this.id)"></th>
+        <th class="cell-4x4" id="cell-4x4" onclick="Click(this.id)"></th>
+        <th class="cell-4x5" id="cell-4x5" onclick="Click(this.id)"></th>
+        <th class="cell-4x6" id="cell-4x6" onclick="Click(this.id)"></th>
+        <th class="cell-4x7" id="cell-4x7" onclick="Click(this.id)"></th>
+        <th class="cell-4x8" id="cell-4x8" onclick="Click(this.id)"></th>
     </tr>
     <tr
     <tr id="Row5">
-        <th class="tg-031e" id="cell-5x1"></th>
-        <th class="tg-031e" id="cell-5x2"></th>
-        <th class="tg-031e" id="cell-5x3"></th>
-        <th class="tg-031e" id="cell-5x4"></th>
-        <th class="tg-031e" id="cell-5x5"></th>
-        <th class="tg-031e" id="cell-5x6"></th>
-        <th class="tg-031e" id="cell-5x7"></th>
-        <th class="tg-031e" id="cell-5x8"></th>
+        <th class="cell-5x1" id="cell-5x1" onclick="Click(this.id)"></th>
+        <th class="cell-5x2" id="cell-5x2" onclick="Click(this.id)"></th>
+        <th class="cell-5x3" id="cell-5x3" onclick="Click(this.id)"></th>
+        <th class="cell-5x4" id="cell-5x4" onclick="Click(this.id)"></th>
+        <th class="cell-5x5" id="cell-5x5" onclick="Click(this.id)"></th>
+        <th class="cell-5x6" id="cell-5x6" onclick="Click(this.id)"></th>
+        <th class="cell-5x7" id="cell-5x7" onclick="Click(this.id)"></th>
+        <th class="cell-5x8" id="cell-5x8" onclick="Click(this.id)"></th>
     </tr>
     <tr id="Row6">
-        <th class="tg-031e" id="cell-6x1"></th>
-        <th class="tg-031e" id="cell-6x2"></th>
-        <th class="tg-031e" id="cell-6x3"></th>
-        <th class="tg-031e" id="cell-6x4"></th>
-        <th class="tg-031e" id="cell-6x5"></th>
-        <th class="tg-031e" id="cell-6x6"></th>
-        <th class="tg-031e" id="cell-6x7"></th>
-        <th class="tg-031e" id="cell-6x8"></th>
+        <th class="cell-6x1" id="cell-6x1" onclick="Click(this.id)"></th>
+        <th class="cell-6x2" id="cell-6x2" onclick="Click(this.id)"></th>
+        <th class="cell-6x3" id="cell-6x3" onclick="Click(this.id)"></th>
+        <th class="cell-6x4" id="cell-6x4" onclick="Click(this.id)"></th>
+        <th class="cell-6x5" id="cell-6x5" onclick="Click(this.id)"></th>
+        <th class="cell-6x6" id="cell-6x6" onclick="Click(this.id)"></th>
+        <th class="cell-6x7" id="cell-6x7" onclick="Click(this.id)"></th>
+        <th class="cell-6x8" id="cell-6x8" onclick="Click(this.id)"></th>
     </tr>
     <tr id="Row7">
-        <th class="tg-031e" id="cell-7x1"></th>
-        <th class="tg-031e" id="cell-7x2"></th>
-        <th class="tg-031e" id="cell-7x3"></th>
-        <th class="tg-031e" id="cell-7x4"></th>
-        <th class="tg-031e" id="cell-7x5"></th>
-        <th class="tg-031e" id="cell-7x6"></th>
-        <th class="tg-031e" id="cell-7x7"></th>
-        <th class="tg-031e" id="cell-7x8"></th>
+        <th class="cell-7x1" id="cell-7x1" onclick="Click(this.id)"></th>
+        <th class="cell-7x2" id="cell-7x2" onclick="Click(this.id)"></th>
+        <th class="cell-7x3" id="cell-7x3" onclick="Click(this.id)"></th>
+        <th class="cell-7x4" id="cell-7x4" onclick="Click(this.id)"></th>
+        <th class="cell-7x5" id="cell-7x5" onclick="Click(this.id)"></th>
+        <th class="cell-7x6" id="cell-7x6" onclick="Click(this.id)"></th>
+        <th class="cell-7x7" id="cell-7x7" onclick="Click(this.id)"></th>
+        <th class="cell-7x8" id="cell-7x8" onclick="Click(this.id)"></th>
     </tr>
     <tr id="Row8">
-        <th class="tg-031e" id="cell-8x1"></th>
-        <th class="tg-031e" id="cell-8x2"></th>
-        <th class="tg-031e" id="cell-8x3"></th>
-        <th class="tg-031e" id="cell-8x4"></th>
-        <th class="tg-031e" id="cell-8x5"></th>
-        <th class="tg-031e" id="cell-8x6"></th>
-        <th class="tg-031e" id="cell-8x7"></th>
-        <th class="tg-031e" id="cell-8x8"></th>
+        <th class="cell-8x1" id="cell-8x1" onclick="Click(this.id)"></th>
+        <th class="cell-8x2" id="cell-8x2" onclick="Click(this.id)"></th>
+        <th class="cell-8x3" id="cell-8x3" onclick="Click(this.id)"></th>
+        <th class="cell-8x4" id="cell-8x4" onclick="Click(this.id)"></th>
+        <th class="cell-8x5" id="cell-8x5" onclick="Click(this.id)"></th>
+        <th class="cell-8x6" id="cell-8x6" onclick="Click(this.id)"></th>
+        <th class="cell-8x7" id="cell-8x7" onclick="Click(this.id)"></th>
+        <th class="cell-8x8" id="cell-8x8" onclick="Click(this.id)"></th>
     </tr>
 </table>
